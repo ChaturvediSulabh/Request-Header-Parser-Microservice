@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.heroku.com/sulabhchaturvedi-request-header-parser.git"
+    "url": "https://git.heroku.com/request-header-parse-ms.git"
   },
   "keywords": [
     "node",
