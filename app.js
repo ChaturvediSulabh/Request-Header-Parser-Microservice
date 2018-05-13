@@ -10,8 +10,7 @@ app.get('/api/whoami',function(req,res,next){
   let ip =req.ip;
   ip = ip.replace(/[a-zA-Z:]+/g,'')
   let sw = req.headers['user-agent'];
-  sw = sw.match(/\(.*\)/g)[0].replace(/[()]/g,'');
-  //sw = sw[1]+' ; '+sw[2];
+  sw = sw.match(/\(.*\)/g)[0].replace(/[()]/g,'').replace(/ Apple.*/g,'');
   let lang = req.headers['accept-language'];
   lang = lang.replace(/,.*/,'');
   const myObj = {}
